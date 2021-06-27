@@ -1,0 +1,221 @@
+html, body, ul{
+    margin:0;
+}
+h2,h3,h4{
+    font-family: 'Jomhuria', cursive;
+    border: 1px solid #dee2e6 ;
+    text-align: center;
+}
+
+h5{
+    color:white;
+    margin:0;
+    text-align: center;
+    background-color: black;
+}
+
+
+html, body{
+    height:100%;
+}
+
+h2{
+    font-size: 46px;
+}
+
+body{
+    margin: 0 200px;
+    display:flex;
+    flex-direction: column;
+}
+header{
+    background-image: url('images/fond.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+    min-height:30vh;
+    display:flex;
+    align-items: center;
+}
+
+nav{
+    background-color: black;
+    position: sticky;
+    position: -webkit-sticky;
+    top : 0px;
+    color:white;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    width:50%;
+    justify-content: space-between;
+    padding:0;
+    height:100%;
+    align-items:center
+}
+a{
+    text-decoration: none;
+    color: white
+}
+nav ul li a:hover{
+    color: blue;
+}
+
+li{
+    list-style-type: none;
+}
+#content{
+    margin-right: 10px;
+    flex:1
+}
+#main{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+footer{
+    justify-self: end;
+    min-height: 100px;
+    background-color: green;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#competences > div{
+    display: flex;
+}
+
+
+
+#competences > div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#competences img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height:auto;
+    width:200px
+}
+
+main{
+    flex:1
+}
+
+aside{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius:.25rem;
+    width:300px
+}
+
+aside img{
+    width:100%;
+    height:auto;
+}
+
+.img-rea-container{
+    display: flex;
+}
+.img-rea-container div{
+    width: 33.333333333%;
+    padding: 5px;
+}
+
+.img-rea-container div img{
+    width:100%;
+    height: auto;
+}
+
+#main-rea, #main-contact{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    align-items:center
+}
+
+form{
+    width: 50%;
+}
+
+input[pattern]:invalid{
+    border: 1px solid #dc3545;
+}
+
+input[type=email]:invalid{
+    border: 1px solid #dc3545;
+}
+
+input[type=email], input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:0.5s
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  fieldset{
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+  }
+
+textarea{
+    height:100px
+}
+@media(max-width: 1400px){
+    #competences div{
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 992px){
+    body{
+        margin:0;
+    }
+
+    aside{
+        display:none
+    }
+    main{
+        padding:0 10px
+    }
+
+    #content{
+        margin-right: 0;
+    }
+
+    nav ul{
+        width:100%;
+        justify-content: space-around;
+    }
+}
+
