@@ -217,5 +217,9 @@ textarea{
         width:100%;
         justify-content: space-around;
     }
+
+    #competences ul{
+        padding-left: 0;
+    }
 }
 
